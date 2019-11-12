@@ -8,11 +8,12 @@ def convert_letter(letter, rotate_by=13):
     return new_letter
 
 def convert_sentence(sentence):
+    sentence = sentence.lower()
     new_sentence = ''
     for letter in sentence:
         new_sentence += convert_letter(letter)
     return new_sentence
 
-print(convert_sentence('hello'))
+print(convert_sentence('Goodbye'))
 # the_new_letter = convert_letter('a')
 # print(the_new_letter)
